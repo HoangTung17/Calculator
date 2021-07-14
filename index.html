@@ -41,41 +41,41 @@
     </div>
 
     <div class="container">
-        <form action="#" name="forms">
-            <input type="text" name="answer">
-            <div class="buttons">
-                <input type="button" value="AC" onclick="forms.answer.value = ''">
-                <input type="button" value="DEL"
-                    onclick="forms.answer.value = forms.answer.value.substr(0, forms.answer.value.length - 1)">
-                <input type="button" value="%" onclick="forms.answer.value += '%'">
-                <input type="button" value="/" onclick="forms.answer.value += '/'">
+
+        <div id="result">
+            <div id="old_results">
+                <p id="old_values" style="color: #fff;"></p>
             </div>
-            <div class="buttons">
-                <input type="button" value="7" onclick="forms.answer.value += '7'">
-                <input type="button" value="8" onclick="forms.answer.value += '8'">
-                <input type="button" value="9" onclick="forms.answer.value += '9'">
-                <input type="button" value="*" onclick="forms.answer.value += '*'">
+            <div id="output_results">
+                <p id="export_value" style="color:#fff"></p>
             </div>
-            <div class="buttons">
-                <input type="button" value="4" onclick="forms.answer.value += '4'">
-                <input type="button" value="5" onclick="forms.answer.value += '5'">
-                <input type="button" value="6" onclick="forms.answer.value += '6'">
-                <input type="button" value="-" onclick="forms.answer.value += '-'">
-            </div>
-            <div class="buttons">
-                <input type="button" value="1" onclick="forms.answer.value += '1'">
-                <input type="button" value="2" onclick="forms.answer.value += '2'">
-                <input type="button" value="3" onclick="forms.answer.value += '3'">
-                <input type="button" value="+" onclick="forms.answer.value += '+'">
-            </div>
-            <div class="buttons">
-                <input type="button" value="0" onclick="forms.answer.value += '0'">
-                <input type="button" value="00" onclick="forms.answer.value += '00'">
-                <input type="button" value="." onclick="forms.answer.value += '.'">
-                <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
-            </div>
-        </form>
+        </div>
+
+        <div class="buttons">
+            <button class="system" id="AC">AC</button>
+            <button class="system" id="DEL">DEL</button>
+            <button class="system" id="%">%</button>
+            <button class="system" id="/">/</button>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+            <button class="system" id="*">*</button>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+            <button class="system" id="-">-</button>
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+            <button class="system" id="+">+</button>
+            <button class="number" id="00">00</button>
+            <button class="number" id="0">0</button>
+            <button class="number" id=".">.</button>
+            <button class="system" id="=">=</button>
+        </div>
     </div>
+
+    <script src="./js/calculator.js"></script>
 </body>
 
 </html>
