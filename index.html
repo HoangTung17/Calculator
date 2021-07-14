@@ -45,7 +45,8 @@
             <input type="text" name="answer">
             <div class="buttons">
                 <input type="button" value="AC" onclick="forms.answer.value = ''">
-                <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0, forms.answer.value.length - 1)">
+                <input type="button" value="DEL"
+                    onclick="forms.answer.value = forms.answer.value.substr(0, forms.answer.value.length - 1)">
                 <input type="button" value="%" onclick="forms.answer.value += '%'">
                 <input type="button" value="/" onclick="forms.answer.value += '/'">
             </div>
@@ -62,7 +63,7 @@
                 <input type="button" value="-" onclick="forms.answer.value += '-'">
             </div>
             <div class="buttons">
-                <input type="button" value="1" onclick="forms.answer.value += '1'"> 
+                <input type="button" value="1" onclick="forms.answer.value += '1'">
                 <input type="button" value="2" onclick="forms.answer.value += '2'">
                 <input type="button" value="3" onclick="forms.answer.value += '3'">
                 <input type="button" value="+" onclick="forms.answer.value += '+'">
@@ -70,7 +71,7 @@
             <div class="buttons">
                 <input type="button" value="0" onclick="forms.answer.value += '0'">
                 <input type="button" value="00" onclick="forms.answer.value += '00'">
-                <input type="button" value="."  onclick="forms.answer.value += '.'">
+                <input type="button" value="." onclick="forms.answer.value += '.'">
                 <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
             </div>
         </form>
